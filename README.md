@@ -9,5 +9,5 @@
   5. I am using dataset regarding how to overcome depression, and how to perform anger management. So I am using these dataset for doing RAG for these two different type of emotions.
   6. The third category is otherwise if the llm suggested any emotion other than **angry and depressed**, I am simply using llm to generate the answer based on the question.
   7. I used langgraph to tackle this problem: My architecture is shown in the image below:
-  8. ![alt text]([http://url/to/img.png](https://github.com/Anurich/CaseStudy/blob/main/therapist_architecture.png))
+  ![alt text](https://github.com/Anurich/CaseStudy/blob/main/therapist_architecture.png)
   
