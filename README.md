@@ -13,7 +13,27 @@
   
 
 ## Task --2
-* In this task i have fine-tuned two model, one is **information retreival model** and **summarization model**
-* **Information Retreival Model:**
+* In this task I have fine-tuned two model, one is **information retreival model** and **summarization model**
+* **Information Retreival Model:**   
   * The task is to find the way that for given query for specific domain, I will be able to find the corresponding response, or vice versa.
-  * So I constructed the dataset that is preprocesed into format of [anchor, positive, negative] 
+  * So I constructed the dataset that is preprocesed into format of [anchor, positive, negative]. Which is used to fine-tuned a sentence-transformers model. The loss function used in this is **MultipleNegativesRankingLoss**
+  * Dataset used for this reddit-text.
+  * Model used for this task is **"bert-base-uncased"**
+  * Metrics used in this case is accuracy_manhattan, accuracy_euclidien, accuracy_cosinus.
+
+* **Summarization**
+  *  In case of summarization I have used the **samsum** dataset, Which contain the question and it's corresponding summarization.
+  *  Model used to fine-tuned is facebook **"facebook/bart-large-cnn"**.
+  *  I have used Peft with LORA configuration, to fine-tuned this model.
+  *  Metrics used in this case is Rouge score.
+ 
+
+## Library used:
+1. Langchain
+2. Langgraph
+3. Transformers
+4. Sentence-transformers
+5. Pytorch
+
+## Language
+python
