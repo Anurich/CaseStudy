@@ -11,3 +11,9 @@
   7. I used langgraph to tackle this problem: My architecture is shown in the image below:
   ![alt text](https://github.com/Anurich/CaseStudy/blob/main/therapist_architecture.png)
   
+
+## Task --2
+* In this task i have fine-tuned two model, one is **information retreival model** and **summarization model**
+* **Information Retreival Model:**
+  * The task is to find the way that for given query for specific domain, I will be able to find the corresponding response, or vice versa.
+  * So I constructed the dataset that is preprocesed into format of [anchor, positive, negative] 
