@@ -36,4 +36,4 @@
 5. Pytorch
 
 ## Language
-python
+* Python==3.12.2
